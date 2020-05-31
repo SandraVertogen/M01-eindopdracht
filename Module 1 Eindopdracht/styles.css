@@ -1,0 +1,255 @@
+
+
+
+body, html  {
+    height: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
+    line-height: 1.2em;
+    text-align: center;
+    
+}
+
+
+/* onderstaande geeft de foto's een witte rand */
+img {
+    border: 10px solid whitesmoke;
+}
+
+
+/* onderstaande code is voor de opmaak van de kopjes */
+h2, h3 {
+    text-transform: uppercase;
+    line-height: 1.4em;
+    letter-spacing: 0.1em;  
+}
+
+
+
+
+
+
+
+/* onderstaande code is voor de opmaak van de linkjes in de navigatiebalk */
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(52, 52, 52);
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+
+/* onderstaande code is voor de navigatie */
+div nav {
+    background-color: white;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 160%;
+}
+
+
+/* met onderstaande code is de navigatiebalk horizontaal geworden */
+nav li {
+    display: inline;
+    padding: 10px; 
+}
+
+
+
+
+
+/* onderstaande code is voor de header */
+div header {
+    color: black;
+    background-color:orangered;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    line-height: 1.4em;
+    letter-spacing: 0.3em;
+    font-size: 150%;
+}
+
+
+
+
+
+
+/* onderstaande code is voor de main */
+main {
+background-color: black;
+color: whitesmoke;
+}
+
+main>div {
+    margin: 40px 100px;
+}
+
+main>p {
+    margin: 40px 100px;
+}
+
+
+/* onderstaande code is voor de linkjes in de main om ze eruit te laten zien als een button */
+main > a {
+    border: 3px solid rgb(52, 52, 52) ;
+    background-color: orangered;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    line-height: 1.4em;
+    letter-spacing: 0.3em;
+    font-size: 150%;
+    text-shadow: 1px 1px 3px #666666;
+    padding: 15px;
+}
+
+
+
+
+
+
+/* onderstaande code is voor het aanmeldformulier */
+
+form div {
+    margin: 10px;
+    padding-bottom: 10px;
+    margin: 10px;
+    text-align: center;     
+}
+
+fieldset {
+    border-style: outset;
+    margin: 10px 150px;
+    color: black;
+    background-color: white;
+}
+
+
+/* onderstaande code is voor het prijsvak onderaan het aanmeldformulier */
+.prijs {
+    background-image: url("images/afbeelding1.jpeg");
+    color: black;
+    height: 400px;
+    margin: 1px;
+    border: black solid 10px; 
+}
+
+h5 {
+    text-transform: uppercase;
+    line-height: 1.6em;
+    letter-spacing: 0.1em; 
+    color: black;
+    font-size: 150%;
+    padding-top: 50px;
+    padding-bottom: 1px;  
+}
+
+
+strong {
+    line-height: 1.4em;
+    color: black;
+    font-size: 120%;
+}
+
+
+
+/* onderstaande code is voor de footer */
+div footer {
+    background-color:orangered;
+}
+
+
+/* onderstaande code haalt de opsommingstekens weg, was nodig bij de footer */
+ul {
+    list-style-type: none;
+}
+
+
+
+/* met onderstaande code is de grid voor de mobiele weergave */
+.container {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 100px 1fr 200px;
+    grid-template-areas:
+     "n"
+     "h"
+     "m"
+     "f";
+}
+
+.header {
+    grid-area: h;      
+}
+
+.nav {
+    grid-area: n;   
+}
+
+.main {
+    grid-area: m;  
+}
+
+.footer {
+    grid-area: f;  
+}
+
+
+
+
+/* met onderstaande code is met flexbox de footer in 3 kolommen verdeeld */
+.kolommen {
+    display: flex;
+    justify-content: space-evenly;}
+
+
+
+
+
+
+
+
+
+/* onderstaande code is voor de desktop versie */
+
+@media screen and (min-width: 1024px) {
+    body, html {
+        height: 100%;
+        font-size: 95%;
+    }
+
+
+h2 { 
+    font-size: 250%;
+}
+
+
+img {
+    height: 300px;
+    width: 450px;
+}
+
+
+
+/* met onderstaande code is met flexbox de tekst naast foto de geplaatst */
+.verkoopargument {
+display: flex;
+margin: 1px 100px 30px 100px;
+justify-content: space-between;
+
+}
+
+p.tekst {
+    padding: 0px 0px 0px 30px;
+}
+

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- hier zet je de code in de head tags -->
+    <title> Next Level Online Coaching Home </title>
+</head>
+
+<body>
+    <!-- hieronder staat de link naar de stylesheet-->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+
+
+    <!-- hieronder staat de code van de header-->
+    <!-- de semantische elementen staan in een div-container voor de CSS opmaak in grid/flexbox-->
+
+    <div class="container">
+        <header class="header">
+            <h1>Next Level Online Coahing</h1>
+        </header>
+
+
+
+
+        <!-- hieronder staat de code van de navigatiebalk-->
+
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aanbod.html">Online Coaching</a></li>
+                <li><a href="about.html">Over mij</a></li>
+                <li><a href="aanmelden.html">Aanmelden</a></li>
+
+            </ul>
+        </nav>
+
+
+
+        <!-- hieronder staat de code van de main-->
+        <main class="main">
+
+            <h2> Nu aanmelden</h2>
+            <p>Geef kort aan waar wij jou mee kunnen helpen.
+                Je ontvangt binnen 24 uur persoonlijk bericht en een
+                uitgebreid intake formulier.</p>
+            <form name="aanmelden" method="POST" data-netlify="true">
+                <fieldset>
+
+                    <div>
+                        <label for="name">Naam</label>
+                        <input type="text" name="name" id="name" required />
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required />
+                    </div>
+                    <div>
+                        <label for="phone">Telefoonnummer</label>
+                        <input type="tel" name="phone" id="phone" />
+                    </div>
+                    <div>
+                        <label for="age">Leeftijd</label>
+                        <input type="number" name="age" id="age" min="1" max="200" step="1" />
+                    </div>
+                    <div>
+                        <label for="date">Geboortedatum</label>
+                        <input type="date" name="date" id="date" />
+                    </div>
+
+                    <div>
+                        Geslacht
+                        <div>
+                            <label for="male">Man</label>
+                            <input type="radio" name="gender" id="male" value="male" />
+                        </div>
+                        <div>
+                            <label for="female">Vrouw</label>
+                            <input type="radio" name="gender" id="female" value="female" />
+                        </div>
+                    </div>
+
+
+                    <div>
+                        Ik wil graag:
+                        <div>
+                            <label for="afvallen">Afvallen</label>
+                            <input type="checkbox" name="afvallen" id="afvallen" />
+                        </div>
+                        <div>
+                            <label for="spiermassa">Meer spiermassa</label>
+                            <input type="checkbox" name="spiermassa" id="spiermassa" />
+                        </div>
+                        <div>
+                            <label for="conditie">Mijn conditie verbeteren</label>
+                            <input type="checkbox" name="conditie" id="conditie" />
+                        </div>
+                        <div>
+                            <label for="leefstijl">Mijn leefstijl verbeteren</label>
+                            <input type="checkbox" name="leefstijl" id="leefstijl" />
+                        </div>
+                    </div>
+
+
+
+                    <div>
+                        <label for="verwachting">Omschrijf kort wat je van de online coaching verwacht:</label>
+                        <textarea id="verwachting" name="verwachting"></textarea>
+                    </div>
+                    <input type="hidden" name="hidden" value="hi" />
+                    <div>
+                        <label for="file">Upload een recente foto</label>
+                        <input id="file" type="file" name="file" />
+                    </div>
+
+
+                    <div>
+                        <label for="url">Wat is de website van de sportschool waar je traint?</label>
+                        <input type="url" name="url" id="url" />
+                    </div>
+
+                </fieldset>
+                <button type="reset">Reset</button>
+                <button type="submit">Nu Starten</button>
+            </form>
+            <br />
+
+            <div class="prijs">
+                <h5> Next Level Online Coaching <br /> voor 149,- per maand</h5>
+                <strong>Lorem ipsum dolor sit amet, consectetur <br />
+                    Sed do eiusmod tempor incididunt ut labore <br />
+                    Ut enim ad minim veniam, quis nostrud <br />
+                </strong>
+            </div>
+        </main>
+
+
+
+        <!-- hieronder staat de code van de footer-->
+        <footer class="footer">
+            <div class="kolommen">
+
+                <footer1>
+                    <h3>MENU</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aanbod.html">Online Coaching</a></li>
+                        <li><a href="about.html">Over mij</a></li>
+                        <li><a href="aanmelden.html">Aanmelden</a></li>
+
+                    </ul>
+                </footer1>
+
+
+                <footer2>
+                    <h3>CONTACTGEGEVENS</h3>
+                    T: 06 xx xx xx xx <br />
+                    E: info@xxx.nl <br />
+                    <a href="https://www.google.nl">Google</a>
+                </footer2>
+
+
+                <footer3>
+                    <h3>NEXT LEVEL</h3>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Consectetur adipiscing elit</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Consectetur adipiscing elit</li>
+                </footer3>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </footer>
+
+
+
+
+    </div>
+</body>
+
+</html>
